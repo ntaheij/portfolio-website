@@ -2,7 +2,7 @@ import {Hero} from "@/components/Hero";
 import {Metadata} from "next";
 import Image from "next/image";
 import placeholder from "../../../public/placeholder.webp";
-import placeholderPhoto from "../../../public/img/placeholder.JPG"
+import placeholderPhoto from "../../../public/img/placeholder.jpg"
 
 export const metadata: Metadata = {
   title: 'About - NTaheij.dev',
