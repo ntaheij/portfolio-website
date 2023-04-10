@@ -37,7 +37,7 @@ const Hero = (props: HeroProps) => {
               alt={"Blob"}
               className="absolute top-0 left-0 -translate-y-1/2 -translate-x-1/4 2xl:hidden"
             />
-            <Image src="/blob.svg" alt={"Blob"} className="absolute bottom-0 right-0 translate-y-1/2 translate-x-1/2" />
+            <Image src="/blob.svg" alt={"Blob"} width="320" height="320" className="absolute bottom-0 right-0 translate-y-1/2 translate-x-1/2" />
           </>
           :
           null

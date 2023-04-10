@@ -2,7 +2,6 @@ import {Hero} from "@/components/Hero";
 import {Metadata} from "next";
 import Image from "next/image";
 import placeholder from "../../../public/placeholder.webp";
-import placeholderPhoto from "../../../public/img/placeholder.jpg"
 
 export const metadata: Metadata = {
   title: 'About - NTaheij.dev',
@@ -33,7 +32,7 @@ export default function About() {
             nostrum…</p>
         </div>
         <div className="col-span-1">
-          <Image className="rounded-md" src={placeholderPhoto} alt={"A picture of me"}/>
+          <Image className="rounded-md" src={placeholder} alt={"A picture of me"}/>
         </div>
       </section>
 
