@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-stone-50;
+}
+
+/* text */
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+.little-text {
+    font-size: 0.75rem;
+}
+
+/* components */
+.button {
+    @apply py-2.5 rounded-lg px-5 transition duration-300 border;
+}
+
+.button.primary {
+    @apply bg-primary hover:bg-transparent border-primary hover:border-primary text-primary;
+}
+
+.button.secondary-black {
+    @apply bg-secondary hover:bg-transparent border-secondary hover:border-secondary hover:text-white;
+}
+
+.button.secondary-white {
+    @apply bg-secondary hover:bg-primary border-secondary hover:border-primary hover:text-white;
+}
+
+.button.tertiary {
+    @apply bg-transparent hover:bg-secondary border-transparent hover:border-secondary text-white;
+}
+
+.button.tertiary-white {
+    @apply bg-transparent hover:bg-secondary border-transparent hover:border-secondary text-black hover:text-white;
+}
+
+.footer-link {
+    @apply underline transition duration-300 hover:text-secondary;
+}
+
+.post:nth-child(even) .post-img {
+    @apply md:order-2 md:rounded-tl-none md:rounded-bl-none md:rounded-tr-lg md:rounded-br-lg;
+}
+
+.post:nth-child(even) .post-content {
+    @apply md:px-8;
+}
