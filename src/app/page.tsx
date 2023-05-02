@@ -46,7 +46,7 @@ export default async function Home() {
 
       <section className="max-w-7xl mx-auto xl:px-0 px-4 grid grid-cols-12 pt-8 gap-8">
         <div className="order-2 md:order-1 col-span-12 md:col-span-6 lg:col-span-3 flex items-start lg:items-center">
-          <Image src={'/img/me.png'} width="300" height="300" alt={"Placeholder alt image"} className="rounded-lg" />
+          <Image src={'/img/me.webp'} width="300" height="300" alt={"Placeholder alt image"} className="rounded-lg" />
         </div>
         <div className="md:order-2 hidden lg:col-span-1 lg:flex justify-center">
           <div className="border-l border-stone-200 h-full"></div>
