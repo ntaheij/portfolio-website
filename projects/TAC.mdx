@@ -1,0 +1,46 @@
+---
+title: TAC
+slug: tac
+description: Custom programming language with a compiler.
+type: featured
+button_text: View GitHub
+button_link: https://github.com/ntaheij/TAC
+image: /placeholder.webp
+---
+## About TAC
+Tac is a fascinating programming language that draws inspiration from the features and syntax of Typescript, Assembly, and C. Created by me, Tac is currently in active development with the primary goal of providing a platform for self-learning and gaining expertise in compiler design.
+
+My motivation behind building Tac stems from a deep curiosity and desire to delve into the intricacies of compiler construction. By embarking on this project, I aim to explore the inner workings of programming languages, understand the complexities involved in transforming source code into executable binaries, and sharpen their skills as a developer.
+
+While Tac is a remarkable endeavor, it is essential to note that, for now, it remains a toy project. As such, Tac should not be considered a fully-fledged programming language suitable for production use. I acknowledge that Tac is a work in progress and advises against relying on it for any critical or professional projects at this stage.
+
+Despite its experimental nature, Tac holds immense value as an educational tool. My commitment to developing Tac serves as an inspiration for aspiring programmers and compiler enthusiasts who wish to gain hands-on experience in building their own programming language. Tac provides a tangible playground for exploring various compiler concepts, including lexing, parsing, semantic analysis, code generation, and optimization.
+
+As I continues to refine Tac, it will gradually evolve into a more robust and capable programming language. By drawing inspiration from Typescript, Assembly, and C, Tac incorporates features that enable developers to write efficient, expressive, and low-level code. It is an exciting project to keep an eye on, as it showcases the dedication and ingenuity of an individual striving to master the art of compiler design while creating a unique programming language.
+
+## Tech stack
+Tac's Tech Stack:
+
+While Tac itself is a programming language, let's explore the possible tech stack that could be utilized in its development.
+
+Lexing and Parsing:
+  * Lexical analysis and parsing are fundamental steps in compiler design. Tools like Flex and Bison (or their alternatives) are commonly used for lexing and parsing source code written in Tac. These tools help in breaking down the source code into tokens and constructing the abstract syntax tree (AST).
+Semantic Analysis:
+  * During semantic analysis, the compiler verifies the correctness of the code in terms of types, scope, and other language-specific rules. This step often involves building symbol tables, type checking, and performing static analysis. Custom code written in a language like C or C++ can be used for implementing semantic analysis algorithms.
+
+Code Generation:
+  * Once the AST is constructed and analyzed, the next step is code generation, where the Tac code is transformed into executable machine code or bytecode. Depending on the target platform, different techniques and tools can be used. For example:
+    * For generating native machine code, low-level programming languages like C or C++ can be used alongside assembly code.
+    * For generating bytecode, LLVM (Low-Level Virtual Machine) can be a powerful choice, providing an intermediate representation and optimization capabilities.
+
+Optimization:
+  * Compiler optimization is a crucial aspect to enhance the performance of the generated code. Techniques like loop optimization, constant folding, register allocation, and others can be implemented using custom algorithms or by leveraging existing optimization frameworks like LLVM or GCC (GNU Compiler Collection).
+
+Runtime Environment:
+  * Depending on the design of the Tac language, a runtime environment may be required to support certain language features or provide libraries and APIs for interacting with the underlying system. The choice of runtime environment can vary, ranging from implementing a custom runtime in a low-level language like C or C++ to utilizing existing virtual machine environments like the Java Virtual Machine (JVM) or .NET Common Language Runtime (CLR).
+
+Development Tools:
+  * During the development process, developers may utilize various tools to aid in debugging, testing, and managing the codebase. Integrated Development Environments (IDEs) such as Visual Studio Code, IntelliJ IDEA, or Eclipse can provide helpful features like syntax highlighting, code completion, and debugging support.
+
+
+It's important to note that the specific tech stack used in Tac's development may vary depending on the preferences, requirements, and expertise of the developer. These are some common technologies and tools that are often used in building programming languages and compilers.
