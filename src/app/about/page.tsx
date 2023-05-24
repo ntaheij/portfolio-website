@@ -1,11 +1,30 @@
 import {Hero} from "@/components/Hero";
 import {Metadata} from "next";
 import Image from "next/image";
-import placeholder from "../../../public/placeholder.webp";
+import portrait from "../../../public/img/me-2.webp";
 
 export const metadata: Metadata = {
   title: 'About - NTaheij.dev',
   description: 'I am Noah Taheij. A cloud engineer from the Netherlands.',
+}
+
+function isLeapYear(year: number) {
+  var d = new Date(year, 1, 28);
+  d.setDate(d.getDate() + 1);
+  return d.getMonth() == 1;
+}
+
+function getAge() {
+  var d = new Date('2004-03-30'), now = new Date();
+  var years = now.getFullYear() - d.getFullYear();
+  d.setFullYear(d.getFullYear() + years);
+  if (d > now) {
+      years--;
+      d.setFullYear(d.getFullYear() - 1);
+  }
+  var days = (now.getTime() - d.getTime()) / (3600 * 24 * 1000);
+  years + days / (isLeapYear(now.getFullYear()) ? 366 : 365)
+  return years + days / (isLeapYear(now.getFullYear()) ? 366 : 365);
 }
 
 export default function About() {
@@ -18,21 +37,24 @@ export default function About() {
       <section className="max-w-7xl mx-auto px-4 xl:px-0 py-16 grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-16">
         <div className="col-span-1 md:col-span-3">
           <h2>Hi, I am Noah Taheij.</h2>
-          <p className="mt-1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-          <p className="mt-4">Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-            quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
-            modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-            nostrum…</p>
-          <h3 className="mt-4">Cybersecurity</h3>
-          <p className="mt-1">Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-            quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
-            modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-            nostrum…</p>
+          <p className="mt-1">I am a {Math.floor(getAge())}-year-old cloud engineer with a passion for coding, photography,
+            and cybersecurity. I discovered my interest in programming at a young age, starting his coding journey at the age of 8.
+            Since then, I dedicated myself to mastering various programming languages, including Java, NodeJS, and Python.</p>
+          <p className="mt-4">Driven by my fascination with computer systems, my initial goal was to create my own software
+            and applications. Over time, I developed a desire to contribute to existing projects and help others through my
+            programming skills. This ambition has shaped his journey and made me the skilled and motivated individual I am today.</p>
+          <p className="mt-1">Currently pursuing a Bachelor&apos;s degree in ICT at Hogeschool Utrecht, my passion for Cloud engineering
+            and automation led me to work as a Cloud Engineer on Azure Governance & Automation at the university. I continue to expand my
+            knowledge and skills in the field while actively pursuing certifications, such as the PSM I and II Certification.</p>
+          <h3 className="mt-4">Photography</h3>
+          <p className="mt-1">In addition to my technical pursuits, I have a deep passion for photography, with a particular focus
+            on portrait and wildlife photography. Through my lens, I capture the essence and beauty of people and the natural world.
+            Whether I am behind the computer screen coding or behind the camera capturing life&apos;s fleeting moments, my passion for
+            the world shines through in every frame.
+           </p>
         </div>
         <div className="col-span-1">
-          <Image className="rounded-md" src={placeholder} alt={"A picture of me"}/>
+          <Image className="rounded-md" src={portrait} alt={"A picture of me"}/>
         </div>
       </section>
 
@@ -49,9 +71,18 @@ export default function About() {
               <div className="absolute w-8 h-8 rounded-full -left-4 border border-stone-200 bg-stone-50 flex items-center justify-center">
                 <div className="w-2 h-2 rounded-full bg-secondary"></div>
               </div>
+              <time className="little-text opacity-50">may 2023 - now</time>
+              <h4>OffShore Events — Allrounder</h4>
+              <p className="mt-1">Igniting the spirits of our adventurous guests, I unleash a torrent of adrenaline-fueled thrills as they embark on an extraordinary journey aboard one of our three lightning-fast RIB boats. With unwavering dedication to customer service and hospitality, I orchestrate a symphony of unforgettable experiences, ensuring that every moment is infused with awe-inspiring excitement and unparalleled care.
+              </p>
+            </li>
+            <li className="mb-8 ml-12">
+              <div className="absolute w-8 h-8 rounded-full -left-4 border border-stone-200 bg-stone-50 flex items-center justify-center">
+                <div className="w-2 h-2 rounded-full bg-secondary"></div>
+              </div>
               <time className="little-text opacity-50">sep 2022 - now</time>
-              <h4>Hogeschool Utrecht</h4>
-              <p className="mt-1">Working with the Cloud Services team to use Infrastructure as Code (Bicep) to deploy and manage Cloud Governance using CI/CD. Also helping to bring the cloud as a service to staff of the university.
+              <h4>Hogeschool Utrecht <time className="little-text opacity-50">(internship)</time></h4>
+              <p className="mt-1">Collaborating with the Cloud Services team, we harness the power of Infrastructure as Code (Bicep) to unleash a storm of efficiency, deploying and commanding Cloud Governance with the speed and precision of a lightning strike through CI/CD. Additionally, we are on a mission to empower the brilliant minds of our university&apos;s staff, unveiling the boundless possibilities of cloud-as-a-service in a spectacular fashion.
               </p>
             </li>
             <li className="mb-8 ml-12">
@@ -61,7 +92,7 @@ export default function About() {
               </div>
               <time className="little-text opacity-50">april 2022 - now</time>
               <h4>Veroxo — Cloud Specialist</h4>
-              <p className="mt-1">Working as a freelancer on Cloud projects. I am responsible for the design and implementation of cloud solutions, within Azure, using Automation and Infrastructure as Code.
+              <p className="mt-1">As a daring freelancer, I unleash my boundless creativity in the realm of Cloud projects. Armed with Azure&apos;s immense power, I engineer and bring to life captivating cloud solutions. Through Automation and Infrastructure as Code, I forge a seamless symphony of efficiency, revolutionizing the digital landscape with lightning-fast designs and implementations.
               </p>
             </li>
             <li className="mb-8 ml-12">
@@ -69,9 +100,9 @@ export default function About() {
                 <div className="w-2 h-2 rounded-full bg-secondary">
                 </div>
               </div>
-              <time className="little-text opacity-50">june 2022 - now</time>
+              <time className="little-text opacity-50">june 2022 - may 2023</time>
               <h4>Racesquare — Race Marshall</h4>
-              <p className="mt-1">Helping guests with getting the most out of their F1 Racing Experience. I am responsible for guidance through the workings of the simulators and entertainment of the guests.
+              <p className="mt-1">Fueling the adrenaline-fueled frenzy of guests, I dive into the high-octane world of the F1 Racing Experience, propelling them to new heights of excitement. With unwavering enthusiasm, I become their fearless navigator, unravelling the secrets of our pulse-pounding simulators. But my role extends far beyond mere guidance - I am the master of entertainment, orchestrating a whirlwind of thrill and delight that leaves every guest breathless and hungry for more.
               </p>
             </li>
             <li className="ml-12 work-last-item">
@@ -82,7 +113,7 @@ export default function About() {
               <div className="absolute bg-stone-50 z-[1] w-8 bottom-0 -left-4 h-24"></div>
               <time className="little-text opacity-50">february 2021 - april 2022</time>
               <h4>Lokalized — Full-Stack Developer</h4>
-              <p className="mt-1">Full-Stack Developer at Lokalized. Working on software that solves social problems. Primarily worked on haalnuaf.nl, which was a service for local business to sell their products online for pick-up during Covid-19.
+              <p className="mt-1">As a Full-Stack Developer at Lokalized, I embark on an exhilarating journey of crafting software solutions that tackle pressing social issues head-on. Among my notable accomplishments is the remarkable haalnuaf.nl, a groundbreaking service empowering local businesses to effortlessly sell their products online for safe and convenient pick-up during the challenging times of Covid-19.
               </p>
             </li>
           </ol>

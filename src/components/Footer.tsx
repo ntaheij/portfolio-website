@@ -2,7 +2,7 @@
 
 import {Button} from "@/components/Button";
 import Image from "next/image";
-import placeholder from "../../public/placeholder.webp";
+import erasmusbrug from "../../public/img/erasmusbrug.webp";
 import {usePathname} from "next/navigation";
 
 const Footer = () => {
@@ -18,7 +18,7 @@ const Footer = () => {
               <Button link={"/contact"} text={"Get in touch"} type={"secondary-white"} />
             </div>
             <div>
-              <Image className="rounded-lg" src={placeholder} alt={"Placeholder for footer"} />
+              <Image className="rounded-lg" src={erasmusbrug} alt={"Placeholder for footer"} />
             </div>
           </section>
         :

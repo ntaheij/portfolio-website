@@ -53,11 +53,11 @@ export default function Contact() {
 
         <div className="col-span-1 md:col-span-3">
           <h3>Contact information</h3>
-          <a href="tel:+31085xxxxxxx" className="group cursor-pointer flex flex-row gap-4 mt-4 items-center">
+          <a href="tel:+310853016035" className="group cursor-pointer flex flex-row gap-4 mt-4 items-center">
             <div className="w-11 h-11 items-center flex justify-center border border-stone-200 rounded-md">
               <FaPhone className="text-secondary group-hover:text-primary transition duration-300" />
             </div>
-            <p className="opacity-70">+31 085 xxx xxxx</p>
+            <p className="opacity-70">+31 085 301 6035</p>
           </a>
           <a href="mailto:noah@taheij.nl" className="group cursor-pointer flex flex-row gap-4 mt-4 items-center">
             <div className="w-11 h-11 items-center flex justify-center border border-stone-200 rounded-md">
@@ -76,7 +76,7 @@ export default function Contact() {
             <div className="w-11 h-11 items-center flex justify-center border border-stone-200 rounded-md">
               <FaLinkedin className="text-secondary group-hover:text-primary transition duration-300" />
             </div>
-            <p className="opacity-70">Spotify</p>
+            <p className="opacity-70">LinkedIn</p>
           </a>
           <a href="https://open.spotify.com/user/n2e84nui9bc8sjtfl80h2k98a" className="group cursor-pointer flex flex-row gap-4 mt-4 items-center">
             <div className="w-11 h-11 items-center flex justify-center border border-stone-200 rounded-md">
