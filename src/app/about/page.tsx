@@ -105,7 +105,7 @@ export default function About() {
                   />
                 </div>
                 <div className="flex flex-col">
-                  <time className="little-text opacity-50">may 2023 - now</time>
+                  <time className="little-text opacity-70">may 2023 - now</time>
                   <h4>OffShore Events — Allrounder</h4>
                 </div>
               </div>
@@ -132,10 +132,10 @@ export default function About() {
                   />
                 </div>
                 <div className="flex flex-col">
-                  <time className="little-text opacity-50">sep 2022 - now</time>
+                  <time className="little-text opacity-70">sep 2022 - now</time>
                   <h4>
                     Hogeschool Utrecht{' '}
-                    <time className="little-text opacity-50">(internship)</time>
+                    <time className="little-text opacity-70">(internship)</time>
                   </h4>
                 </div>
               </div>
@@ -162,7 +162,7 @@ export default function About() {
                   />
                 </div>
                 <div className="flex flex-col">
-                  <time className="little-text opacity-50">
+                  <time className="little-text opacity-70">
                     april 2022 - now
                   </time>
                   <h4>Veroxo — Cloud Specialist</h4>
@@ -190,7 +190,7 @@ export default function About() {
                   />
                 </div>
                 <div className="flex flex-col">
-                  <time className="little-text opacity-50">
+                  <time className="little-text opacity-70">
                     june 2022 - may 2023
                   </time>
                   <h4>Racesquare — Race Marshall</h4>
@@ -222,7 +222,7 @@ export default function About() {
                   />
                 </div>
                 <div className="flex flex-col">
-                  <time className="little-text opacity-50">
+                  <time className="little-text opacity-70">
                     february 2021 - april 2022
                   </time>
                   <h4 className="">Lokalized — Full-Stack Developer</h4>
@@ -256,7 +256,7 @@ export default function About() {
                   />
                 </div>
                 <div className="flex flex-col">
-                  <time className="little-text opacity-50">2021 - 2025</time>
+                  <time className="little-text opacity-70">2021 - 2025</time>
                   <h4 className="">
                     HU University of Applied Sciences Utrecht, BSc HBO-ICT
                     (leerroute Open-ICT)
@@ -284,7 +284,7 @@ export default function About() {
                   />
                 </div>
                 <div className="flex flex-col">
-                  <time className="little-text opacity-50">2023</time>
+                  <time className="little-text opacity-70">2023</time>
                   <h4 className="">Professional Scrum Master I (PSM I)</h4>
                 </div>
               </div>
