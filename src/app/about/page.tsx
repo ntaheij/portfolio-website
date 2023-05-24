@@ -99,7 +99,7 @@ export default function About() {
               <div className="flex flex-row gap-4">
                 <div className="w-11 h-11 items-center flex justify-center border border-stone-200 rounded-md">
                   <Image
-                    className="rounded-md"
+                    className="rounded-md p-1"
                     src={offshore}
                     alt={'OffShore Events Logo'}
                   />
@@ -126,7 +126,7 @@ export default function About() {
               <div className="flex flex-row gap-4">
                 <div className="w-11 h-11 items-center flex justify-center border border-stone-200 rounded-md">
                   <Image
-                    className="rounded-md"
+                    className="rounded-md p-1"
                     src={hu}
                     alt={'Hogeschool Utrecht Logo'}
                   />
@@ -156,7 +156,7 @@ export default function About() {
               <div className="flex flex-row gap-4">
                 <div className="w-11 h-11 items-center flex justify-center border border-stone-200 rounded-md">
                   <Image
-                    className="rounded-md"
+                    className="rounded-md p-1"
                     src={veroxo}
                     alt={'Veroxo Logo'}
                   />
@@ -184,7 +184,7 @@ export default function About() {
               <div className="flex flex-row gap-4">
                 <div className="w-11 h-11 items-center flex justify-center border border-stone-200 rounded-md">
                   <Image
-                    className="rounded-md"
+                    className="rounded-md p-1"
                     src={racesquare}
                     alt={'Racesquare Logo'}
                   />
@@ -216,7 +216,7 @@ export default function About() {
               <div className="flex flex-row gap-4">
                 <div className="w-11 h-11 items-center flex justify-center border border-stone-200 rounded-md">
                   <Image
-                    className="rounded-md"
+                    className="rounded-md p-1"
                     src={lokalized}
                     alt={'Lokalized Logo'}
                   />
@@ -250,7 +250,7 @@ export default function About() {
               <div className="flex flex-row gap-4">
                 <div className="w-11 h-11 items-center flex justify-center border border-stone-200 rounded-md">
                   <Image
-                    className="rounded-md"
+                    className="rounded-md p-1"
                     src={hu}
                     alt={'HU University of Applied Sciences Utrecht Logo'}
                   />
@@ -278,7 +278,7 @@ export default function About() {
               <div className="flex flex-row gap-4">
                 <div className="w-11 h-11 items-center flex justify-center border border-stone-200 rounded-md">
                   <Image
-                    className="rounded-md"
+                    className="rounded-md p-1"
                     src={psm1}
                     alt={'PSM1 Logo'}
                   />
